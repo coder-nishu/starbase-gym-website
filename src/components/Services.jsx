@@ -39,8 +39,8 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="py-20 lg:py-32 bg-[#111111] relative">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="services" className="py-20 mt-10  lg:py-32 bg-[#111111] relative">
+      <div className="max-w-7xl mx-auto ">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-20">
           <span className="text-[#FF6B00] font-bold tracking-widest uppercase text-sm mb-4 block">

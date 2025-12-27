@@ -15,7 +15,7 @@ const HeroBanner = () => {
   ];
 
   return (
-    <section id="home" className="relative min-h-screen w-full flex items-center justify-center overflow-hidden">
+    <section id="home" className="relative min-h-screen pb-10 w-full flex items-center justify-center overflow-hidden">
       {/* Video Background */}
       <div className="absolute inset-0 z-0">
         <video
@@ -27,15 +27,15 @@ const HeroBanner = () => {
           poster="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1920"
         >
           <source
-            src="https://assets.mixkit.co/videos/preview/mixkit-woman-running-on-a-treadmill-in-an-empty-gym-45119-large.mp4"
+            src="https://video-previews.elements.envatousercontent.com/h264-video-previews/a2a96c7d-7aa8-426f-9f98-a8b35233d5b5/18731929.mp4"
             type="video/mp4"
           />
         </video>
-        <div className="absolute inset-0 bg-black/70"></div>
+        {/* <div className="absolute inset-0 bg-black/0"></div> */}
       </div>
 
       {/* Gradient Overlays */}
-      <div className="absolute inset-0 bg-linear-to-r from-black/90 via-black/70 to-black/90 z-0"></div>
+      <div className="absolute inset-0 bg-linear-to-r from-black/40 via-black/20 to-black/90 z-0"></div>
       <div className="absolute inset-0 bg-linear-to-t from-[#0B0B0B] via-transparent to-transparent z-0"></div>
 
       {/* Main Content - Centered */}
@@ -117,7 +117,7 @@ const HeroBanner = () => {
 
       {/* Scroll Indicator */}
       <div
-        className={`absolute bottom-10 left-1/2 -translate-x-1/2 transition-all duration-700 delay-500 ${
+        className={`absolute bottom-10 right-20 -translate-x-1/2 transition-all duration-700 delay-500 ${
           isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
         }`}
       >
